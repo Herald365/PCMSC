@@ -1,4 +1,4 @@
-/* Reset basic styles */
+4/* Reset basic styles */
 html, body {
     margin: 0;
     padding: 0;
@@ -77,14 +77,7 @@ html, body {
     color: white;
 }
 
-/* Slideshow 
-.slideshow-container {
-    position: relative;
-}
 
-.slide {
-    display: none;
-}*/
 
 /* Other sections */
 .note, .aca, .loc, .ins {
@@ -108,13 +101,7 @@ html, body {
     background-color: hsl(100, 50%, 80%);
 }
 
-/* Footer Styling */
-/*.footer {
-    background-color: hsl(100, 50%, 90%);
-    text-align: center;
-    padding: 10px;
-    color: black;
-}*/
+
 footer {
   background-color: #333;
   color: white;
@@ -233,12 +220,4 @@ tr:hover {
     background-color: #f1f1f1;
 }
 
-/*img {
-    border-radius: 50%; /* Optional: Make the images round 
-}*/
 
-/*
-h1, h2, p {
-  font-family:'Dancing Script', cursive;
-  font-size:clamp(30px, 5vw, 80px)
-  } */
