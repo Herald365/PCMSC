@@ -68,7 +68,7 @@ html, body {
 
 /* Hero Section */
 .hero {
-    background-color: hsl(100, 50%, 40%);
+    background-color: hsl(100, 50%, 0%);
     text-align: center;
     padding: 40px;
 }
