@@ -1,8 +1,8 @@
-4/* Reset basic styles */
 html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+    box-sizing: border-box;
 }
 
 /* General styling for the website */
@@ -48,7 +48,7 @@ html, body {
 
 /* Sticky Navigation Bar */
 .nav {
-    background-color: hsl(100, 50%, 30%);
+    background-color: teal;
     text-align: center;
     position: sticky;
     top: 0;
@@ -67,13 +67,13 @@ html, body {
 }
 
 /* Hero Section */
-.hero {
-    background-color: hsl(100, 50%, 0%);
+/*.hero {
+    background-color: hsl(100, 50%, 40%);
     text-align: center;
     padding: 40px;
-}
+}*/
 
-.hero h2 {
+#hero h2 {
     color: white;
 }
 
@@ -86,27 +86,53 @@ html, body {
 }
 
 .note {
-    background-color: hsl(100, 50%, 50%);
+    background-color: maroon;
 }
 
 .aca {
-    background-color: hsl(100, 50%, 60%);
+    background-color:navy ;
 }
 
 .loc {
-    background-color: hsl(100, 50%, 70%);
+    background-color: hsl(150, 51%,40%);
 }
+
 
 .ins {
-    background-color: hsl(100, 50%, 80%);
+    background-color: hsl(150,80%,40%);
+    padding: 40px;
+    text-align: center; /* Center text */
 }
 
+.ins ul {
+    display: flex;
+    flex-direction: column; /* Change this to row if you want horizontal layout */
+    align-items: center;
+    padding: 0;
+    list-style-type: none; /* Remove bullets */
+}
 
-footer {
-  background-color: #333;
-  color: white;
+.ins li {
+    margin: 20px 0; /* Add spacing between items */
+}
+
+.ins img {
+    max-width: 100%; /* Responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Footer Styling */
+
+#footer * {
+  background-color: #444;
+  color:white;
   padding: 20px;
   text-align: center;
+  font-family: 'Lobster',cursive;
+  font-size: 5vw;
+}
+*{
+  font-family: 'Lobster',cursive;
 }
 
 .footer-content {
@@ -120,7 +146,7 @@ footer {
 }
 
 .footer-section h3 {
-  font-size: 18px;
+  font-size:4vw;
   margin-bottom: 10px;
 }
 
@@ -152,12 +178,12 @@ footer {
   margin-top: 20px;
   font-size: 14px;
 }
+/*.photo img:hover {
+    transform: scale(2)); /* Slightly enlarges the image on hover 
+    transition: transform 0.3s ease; /* Smooth transition effect 
+}*/
 .photo img:hover {
-    transform: scale(1.05); /* Slightly enlarges the image on hover */
-    transition: transform 0.3s ease; /* Smooth transition effect */
-}
-.photo img:hover {
-    transform: scale(1.05); /* Slightly enlarges the image on hover */
+    transform: scale(1.02); /* Slightly enlarges the image on hover */
     transition: transform 0.3s ease; /* Smooth transition effect */
 }
 #hero {
@@ -166,16 +192,24 @@ footer {
     background-color:hsl(100,50%,0%);
 }
 
-.photo-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
-    gap: 10px; /* Space between images */
-}
+.photo-grid{
+   display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    gap: 10px; /* Space between imaphot*/
+    
+} 
+
+
 
 .photo img {
     width: 100%; /* Make images responsive */
     border-radius: 8px; /* Optional: adds a rounded corner effect */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds shadow for depth */
+    height: auto;
+   margin-right: 30px;
+   margin-left: 0px;
+   margin-bottom: 10px;
+   margin-top: 10px;
 }
 .notice-card {
     background-color: #fff; /* White background for contrast */
@@ -219,5 +253,48 @@ th {
 tr:hover {
     background-color: #f1f1f1;
 }
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color:white;
+}
+
+h1, h2,p{
+    font-family: 'Lobster',cursive;
+}
+
+p {
+    font-weight: 400;
+}
+ 
+#hassel{
+  display: flex;
+ align-items:left;
+  padding: 30px;
+}
+.ins img{
+margin: 20px;
+width: 100%; /* Make images responsive */
+    border-radius: 8px; /* Optional: adds a rounded corner effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds shadow for depth */
+    height: auto;
+}
+.loc img{
+  margin: 20px;
+width: 100%; /* Make images responsive */
+    border-radius: 8px; /* Optional: adds a rounded corner effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds shadow for depth */
+    height: auto;
+}
+#join{
+  margin:clamp(2px,2vw,20px);
+}
+.footer-section about{
+  display: flex;
+  align-items: center;
+}
+
 
 
