@@ -295,6 +295,9 @@ width: 100%; /* Make images responsive */
   display: flex;
   align-items: center;
 }
+a{
+color:Black;
+} 
 
 
 
